@@ -1,12 +1,10 @@
 # ignore all quartus-generated files
-*.bsf
 *.qpf
 *.qsf
+*.temp
 *.qws
 *.vhd.bak
 **/db/
 incremental_db/
 output_files/
-
-# ignore waveform files
-*.vwf
+simulation/
