@@ -1,0 +1,7 @@
+# ignore all quartus-generated files
+*.bsf
+*.qpf
+*.qsf
+*.qws
+*.vhd.bak
+**/db/
