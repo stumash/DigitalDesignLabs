@@ -7,3 +7,6 @@
 **/db/
 incremental_db/
 output_files/
+
+# ignore waveform files
+*.vwf
