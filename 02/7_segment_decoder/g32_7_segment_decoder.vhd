@@ -13,7 +13,7 @@ entity g32_7_segment_decoder is
         code         : in std_logic_vector(3 downto 0);
         mode         : in std_logic;
         segments_out : out std_logic_vector(6 downto 0)
-    )
+    );
 end entity g32_7_segment_decoder;
 
 architecture sim of g32_7_segment_decoder is
@@ -77,4 +77,5 @@ begin
         "0111111" when "11101", -- "-" when mode=1, code=13
         "0111111" when "11110", -- "-" when mode=1, code=14
         "0111111" when "11111", -- "-" when mode=1, code=15
+        "0111111" when others;  -- all other values
 end architecture sim;
