@@ -1,10 +1,10 @@
-# ignore all quartus-generated files
+# ignore some Quartus-generated files
 *.qpf
 *.qsf
 *.temp
 *.qws
 *.vhd.bak
 **/db/
-incremental_db/
-output_files/
-simulation/
+**/incremental_db/
+**/output_files/
+**/simulation/
