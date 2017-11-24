@@ -24,30 +24,32 @@ begin
 	begin
 		if reset = '1' then
 			state <= A;
+			Stack_Enable <= '0';
+			Rand_Enable <= '0';
 		elsif rising_edge(clk) then
 			case state is
 				when A =>
-					Stack_Enable <= '0';
-					Rand_Enable <= '0';
 					if Request_Deal = '0' then
 						state <= B;
+						Stack_Enable <= '0';
+						Rand_Enable <= '0';
 					end if;
 				when B =>
-					Stack_Enable <= '0';
-					Rand_Enable <= '0';
 					if Request_Deal = '1' then
 						state <= C;
+						Rand_Enable <= '1';
+						Stack_Enable <= '0';
 					end if;
 				when C =>
-					Rand_Enable <= '1';
-					Stack_Enable <= '0';
 					if RAND_LT_NUM = '1' then
 						state <= D;
+						Rand_Enable <= '0';
+						Stack_Enable <= '1';
 					end if;
 				when D =>
-					Rand_Enable <= '0';
-					Stack_Enable <= '1';
 					state <= A;
+					Stack_Enable <= '0';
+					Rand_Enable <= '0';
 			end case;
 		end if;
 	end process;

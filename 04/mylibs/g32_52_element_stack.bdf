@@ -18399,3 +18399,4 @@ applicable agreement for further details.
 (text "legal_op = neither empty and pop nor full and push" (rect 688 -1024 974 -1010)(font "Arial" (font_size 8)))
 (text "num" (rect 1056 -840 1079 -826)(font "Arial" (font_size 8)))
 (text "en = enable and legal_op and not NOP" (rect 568 -1168 783 -1154)(font "Arial" (font_size 8)))
+(text "num = number of elements on stack (0 - 52)" (rect 24 -904 271 -890)(font "Arial" (font_size 8)))
