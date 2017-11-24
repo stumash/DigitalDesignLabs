@@ -1,6 +1,7 @@
 # ignore some Quartus-generated files
 *.qpf
 *.qsf
+*.qip
 *.temp
 *.qws
 *.vhd.bak
