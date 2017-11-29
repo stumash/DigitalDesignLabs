@@ -31,7 +31,7 @@ begin
     --    |     |
     --  5 |     | 1     'A' would be 0001000
     --    |  6  |       '8' would be 0000000
-    --     -----        '5' would be 0100100
+    --     -----        '5' would be 0010010
     --    |     |
     --  4 |     | 2     ...and so on
     --    |     |
@@ -77,5 +77,5 @@ begin
         "0111111" when "11101", -- "-" when mode=1, code=13
         "0111111" when "11110", -- "-" when mode=1, code=14
         "0111111" when "11111", -- "-" when mode=1, code=15
-        "0111111" when others;  -- all other values
+        "0111111" when others;  -- "-" when all other values
 end architecture sim;

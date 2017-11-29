@@ -70,22 +70,6 @@ applicable agreement for further details.
 	(annotation_block (location)(rect 472 152 528 168))
 )
 (pin
-	(input)
-	(rect 784 592 952 608)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "stack_rst" (rect 5 0 51 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
 	(output)
 	(rect 2224 440 2400 456)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -140,6 +124,70 @@ applicable agreement for further details.
 	(rect 2224 640 2400 656)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "NUM_0[6..0]" (rect 90 0 152 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 608 304 784 320)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "press_true" (rect 90 0 141 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 744 480 920 496)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "stack_enable" (rect 90 0 154 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 752 504 928 520)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "rand_enable" (rect 90 0 149 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 744 528 920 544)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "rand[5..0]" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -263,7 +311,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 984 88 1168 168)
+	(rect 720 -56 904 24)
 	(text "g32_RANDU" (rect 5 0 68 12)(font "Arial" ))
 	(text "inst9" (rect 8 64 31 76)(font "Arial" ))
 	(port
@@ -943,31 +991,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1168 120)
-	(pt 1184 120)
-	(bus)
-)
-(connector
-	(pt 1184 232)
-	(pt 1184 120)
-	(bus)
-)
-(connector
-	(pt 696 232)
-	(pt 696 112)
-	(bus)
-)
-(connector
-	(pt 696 112)
-	(pt 728 112)
-	(bus)
-)
-(connector
-	(pt 1232 120)
-	(pt 1200 120)
-	(bus)
-)
-(connector
 	(pt 1904 368)
 	(pt 1904 448)
 	(bus)
@@ -990,11 +1013,6 @@ applicable agreement for further details.
 (connector
 	(pt 1872 368)
 	(pt 1904 368)
-	(bus)
-)
-(connector
-	(pt 696 232)
-	(pt 1184 232)
 	(bus)
 )
 (connector
@@ -1070,16 +1088,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 904 120)
-	(pt 952 120)
-	(bus)
-)
-(connector
-	(pt 952 120)
-	(pt 984 120)
-	(bus)
-)
-(connector
 	(pt 1456 288)
 	(pt 1208 288)
 	(bus)
@@ -1105,10 +1113,6 @@ applicable agreement for further details.
 (connector
 	(pt 792 392)
 	(pt 808 392)
-)
-(connector
-	(pt 1376 272)
-	(pt 792 272)
 )
 (connector
 	(pt 1040 392)
@@ -1175,11 +1179,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "V" (rect 1480 368 1488 380)(font "Arial" ))
-	(pt 1504 376)
-	(pt 1488 376)
-)
-(connector
 	(text "CLK" (rect 1472 352 1493 364)(font "Arial" ))
 	(pt 1496 360)
 	(pt 1504 360)
@@ -1235,10 +1234,6 @@ applicable agreement for further details.
 )
 (connector
 	(pt 656 296)
-	(pt 1064 296)
-)
-(connector
-	(pt 656 296)
 	(pt 656 232)
 )
 (connector
@@ -1251,11 +1246,6 @@ applicable agreement for further details.
 	(pt 704 272)
 )
 (connector
-	(text "rst" (rect 696 48 708 60)(font "Arial" ))
-	(pt 728 64)
-	(pt 688 64)
-)
-(connector
 	(text "rst" (rect 1480 280 1492 292)(font "Arial" ))
 	(pt 1504 296)
 	(pt 1480 296)
@@ -1263,66 +1253,6 @@ applicable agreement for further details.
 (connector
 	(pt 1360 128)
 	(pt 1376 128)
-)
-(connector
-	(pt 608 312)
-	(pt 584 312)
-)
-(connector
-	(pt 584 312)
-	(pt 584 328)
-)
-(connector
-	(pt 584 328)
-	(pt 776 328)
-)
-(connector
-	(pt 776 328)
-	(pt 776 376)
-)
-(connector
-	(pt 760 376)
-	(pt 776 376)
-)
-(connector
-	(pt 776 376)
-	(pt 808 376)
-)
-(connector
-	(pt 952 120)
-	(pt 952 200)
-	(bus)
-)
-(connector
-	(pt 1088 200)
-	(pt 1088 424)
-	(bus)
-)
-(connector
-	(text "curr_rand[31..0]" (rect 964 184 1041 196)(font "Arial" ))
-	(pt 952 200)
-	(pt 1024 200)
-	(bus)
-)
-(connector
-	(pt 1200 120)
-	(pt 1200 200)
-	(bus)
-)
-(connector
-	(text "curr_rand[31..26]" (rect 1042 184 1125 196)(font "Arial" ))
-	(pt 1040 200)
-	(pt 1088 200)
-	(bus)
-)
-(connector
-	(pt 1088 200)
-	(pt 1200 200)
-	(bus)
-)
-(connector
-	(pt 1040 376)
-	(pt 1128 376)
 )
 (connector
 	(pt 1208 376)
@@ -1347,28 +1277,184 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "curr_rand[5..0]" (rect 1206 576 1277 588)(font "Arial" ))
-	(pt 1288 600)
-	(pt 1224 600)
+	(pt 608 312)
+	(pt 600 312)
+)
+(connector
+	(pt 600 312)
+	(pt 600 328)
+)
+(connector
+	(pt 600 328)
+	(pt 776 328)
+)
+(connector
+	(pt 776 328)
+	(pt 776 376)
+)
+(connector
+	(pt 760 376)
+	(pt 776 376)
+)
+(connector
+	(pt 776 376)
+	(pt 808 376)
+)
+(connector
+	(text "G" (rect 1216 360 1224 372)(font "Arial" ))
+	(pt 1232 360)
+	(pt 1216 360)
+)
+(connector
+	(text "rand_enable" (rect 951 248 1010 260)(font "Arial" ))
+	(pt 872 264)
+	(pt 992 264)
+)
+(connector
+	(text "curr_rand[31..26]" (rect 628 520 711 532)(font "Arial" ))
+	(pt 744 536)
+	(pt 680 536)
 	(bus)
 )
 (connector
-	(pt 1232 360)
-	(pt 1168 360)
+	(text "stack_enable" (rect 930 304 994 316)(font "Arial" ))
+	(pt 1072 320)
+	(pt 872 320)
 )
 (connector
-	(pt 1168 360)
-	(pt 1168 312)
+	(pt 1072 320)
+	(pt 1072 376)
 )
 (connector
-	(text "stack_rst" (rect 1118 296 1164 308)(font "Arial" ))
-	(pt 1168 312)
-	(pt 1128 312)
+	(pt 1040 376)
+	(pt 1072 376)
+)
+(connector
+	(pt 1072 376)
+	(pt 1128 376)
+)
+(connector
+	(pt 792 272)
+	(pt 1376 272)
+)
+(connector
+	(pt 872 264)
+	(pt 872 296)
+)
+(connector
+	(pt 656 296)
+	(pt 872 296)
+)
+(connector
+	(pt 872 296)
+	(pt 1064 296)
+)
+(connector
+	(pt 720 -24)
+	(pt 712 -24)
+	(bus)
+)
+(connector
+	(pt 712 -24)
+	(pt 712 32)
+	(bus)
+)
+(connector
+	(pt 712 32)
+	(pt 952 32)
+	(bus)
+)
+(connector
+	(pt 952 32)
+	(pt 952 120)
+	(bus)
+)
+(connector
+	(pt 688 112)
+	(pt 728 112)
+	(bus)
+)
+(connector
+	(pt 688 112)
+	(pt 688 80)
+	(bus)
+)
+(connector
+	(pt 680 80)
+	(pt 688 80)
+	(bus)
+)
+(connector
+	(pt 680 80)
+	(pt 680 -64)
+	(bus)
+)
+(connector
+	(pt 680 -64)
+	(pt 912 -64)
+	(bus)
+)
+(connector
+	(pt 912 -64)
+	(pt 912 -24)
+	(bus)
+)
+(connector
+	(pt 912 -24)
+	(pt 904 -24)
+	(bus)
+)
+(connector
+	(text "rst" (rect 696 48 708 60)(font "Arial" ))
+	(pt 696 64)
+	(pt 728 64)
+)
+(connector
+	(pt 904 120)
+	(pt 952 120)
+	(bus)
+)
+(connector
+	(text "curr_rand[31..0]" (rect 964 104 1041 116)(font "Arial" ))
+	(pt 952 120)
+	(pt 1024 120)
+	(bus)
+)
+(connector
+	(pt 1088 120)
+	(pt 1088 424)
+	(bus)
+)
+(connector
+	(text "curr_rand[31..26]" (rect 1042 104 1125 116)(font "Arial" ))
+	(pt 1040 120)
+	(pt 1088 120)
+	(bus)
+)
+(connector
+	(pt 1088 120)
+	(pt 1232 120)
+	(bus)
+)
+(connector
+	(pt 1504 376)
+	(pt 1480 376)
+)
+(connector
+	(pt 1480 480)
+	(pt 1480 376)
+)
+(connector
+	(text "rand_enable" (rect 1488 464 1547 476)(font "Arial" ))
+	(pt 1480 480)
+	(pt 1528 480)
 )
 (junction (pt 1456 360))
 (junction (pt 952 120))
 (junction (pt 776 376))
-(junction (pt 1088 200))
+(junction (pt 1072 376))
+(junction (pt 872 296))
+(junction (pt 1088 120))
 (text "rand < num" (rect 1232 56 1295 70)(font "Arial" (font_size 8)))
 (text "player's most recently dealt card" (rect 1480 256 1665 270)(font "Arial" (font_size 8)))
 (text "0,1 = INIT" (rect 992 496 1043 510)(font "Arial" (font_size 8)))
